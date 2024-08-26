@@ -2,7 +2,9 @@ import * as anchor from "@coral-xyz/anchor";
 import * as web3 from "@solana/web3.js";
 import type { PeinStaking } from "../target/types/pein_staking";
 
+
 // Configure the client to use the local cluster
+
 anchor.setProvider(anchor.AnchorProvider.env());
 
 const program = anchor.workspace.PeinStaking as anchor.Program<PeinStaking>;

@@ -42,6 +42,7 @@ mod pein_staking {
         staking_info.staking_vaults_bump = staking_token_vaults_bump;
         staking_info.reward_vaults_bump = reward_token_vaults_bump;
 
+
         Ok(())
     }
 
@@ -53,6 +54,7 @@ mod pein_staking {
             return err!(StakingError::InsufficientBalance);
         }
 
+        
         token::transfer(
             CpiContext::new_with_signer(
                 ctx.accounts.token_program.to_account_info(),
