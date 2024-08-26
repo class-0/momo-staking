@@ -12,6 +12,7 @@ let rewardWalletATA: web3.PublicKey;
 let stakingTokenVaults: web3.PublicKey;
 let rewardTokenVaults: web3.PublicKey;
 
+
 describe("Test", () => {
   // Configure the client to use the local cluster
   anchor.setProvider(anchor.AnchorProvider.env());
