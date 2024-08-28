@@ -1,8 +1,10 @@
 use anchor_lang::prelude::*;
 use anchor_spl::token::{self, Mint, Token, TokenAccount, Transfer};
 
+
 // This is your program's public key and it will update
 // automatically when you build the project.
+
 declare_id!("HJsEfnpgjEhEPa3SYcg6pchqhh2pFGSi331hTyqs5iis");
 
 fn get_reward(
